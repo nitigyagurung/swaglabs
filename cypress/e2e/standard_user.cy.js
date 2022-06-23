@@ -48,7 +48,7 @@ describe('Standard User', () => {
     cy.get('[data-test="continue"]').click()
 
     //assert the total price
-    cy.get('.summary_total_label').should('have.text', 'Total: $71.26')
+    cy.get('.summary_total_label').should('include.text', '$71.26')
   })
 
     it('Log out and login as log_out_user and validate the error message',()=>{
