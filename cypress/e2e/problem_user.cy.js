@@ -1,5 +1,5 @@
 describe('Problem User', () => {
-  beforeEach(() => {
+  beforeEach("Visit Home Pgae and Login as standard user",() => {
     //Open the Swag Lab Home Page
     cy.visit('https://www.saucedemo.com/')
     //Login as problem_user
@@ -7,7 +7,7 @@ describe('Problem User', () => {
     cy.get('[data-test="password"]').type("secret_sauce")
     cy.get('[data-test="login-button"]').click()
   })
-  afterEach(() => {
+  afterEach("Logout",() => {
     cy.get('.bm-burger-button').click()
     cy.get('#logout_sidebar_link').click()
   })

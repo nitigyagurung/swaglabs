@@ -10,6 +10,6 @@ npm install cypress --save-dev
 2. Open the terminal.
 3. Enter the following command to open "Cypress Dashboard".
    node_modules/.bin/cypress open
-4. Select the testing type. In this case, we are performing an end to end test. So, select "E2E Testing".
+4. Select the testing type. Since it's an end to end test, select "E2E Testing".
 5. Select the browser to launch the "Test Runner".
 6. On "Specs" menu, double click on the test file you wish to perform test on.
