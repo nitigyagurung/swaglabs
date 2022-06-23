@@ -6,7 +6,7 @@
 npm install cypress --save-dev
 
 *****Instructions on how to run the test*****
-1. Import the project folder on your code editor.
+1. Import the project folder on your code editor or clone this repository.
 2. Open the terminal.
 3. Enter the following command to open "Cypress Dashboard".
    node_modules/.bin/cypress open
