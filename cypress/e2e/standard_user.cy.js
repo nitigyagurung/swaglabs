@@ -1,5 +1,5 @@
 describe('Standard User', () => {
-  it("Open the Home Page and verify the URL and Title", () => {
+  beforeEach("Open the Home Page and verify the URL and Title", () => {
     //Open the Swag Lab Home Page
     cy.visit('https://www.saucedemo.com/')
     //assert the URL
@@ -49,13 +49,13 @@ describe('Standard User', () => {
 
     //assert the total price
     cy.get('.summary_total_label').should('include.text', '$71.26')
-  })
 
-    it('Log out and login as log_out_user and validate the error message',()=>{
     //Log out
     cy.get('.bm-burger-button').click()
     cy.get('#logout_sidebar_link').click()
+  })
 
+    it('Login as log_out_user and validate the error message',()=>{
     //Login with locked_out_user
     cy.get('[data-test="username"]').type("locked_out_user")
     cy.get('[data-test="password"]').type("secret_sauce")
