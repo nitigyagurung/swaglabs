@@ -4,6 +4,8 @@
 *****Installation*****
 1. Type the following command in your code editor's terminal to install Cypress for Windows.
 npm install cypress --save-dev
+or
+npm i
 
 *****Instructions on how to run the test*****
 1. Import the project folder on your code editor or clone this repository.
